@@ -13,6 +13,17 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupStyle()
+    }
+    
+    private func setupStyle() {
+        if let titleView = navigationController?.view, let navBar = navigationController?.navigationBar {
+            let logoNavbarAsset = UIImage(named: UIImage.AssetName.logoNavbar.rawValue)
+            let logoNavbarImageView = UIImageView(image: logoNavbarAsset)
+            logoNavbarImageView.contentMode = .scaleAspectFit
+            logoNavbarImageView.frame = navBar.frame
+            logoNavbarImageView.frame.size.height -= 8
+            titleView.addSubview(logoNavbarImageView)
+        }
     }
 }

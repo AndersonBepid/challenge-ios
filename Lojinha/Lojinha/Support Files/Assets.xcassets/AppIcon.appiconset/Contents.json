@@ -100,14 +100,15 @@
       "scale" : "2x"
     },
     {
-      "idiom" : "ios-marketing",
       "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "app_icon.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "ItunesArtwork@2x.png",
+      "filename" : "app_icon-1.png",
       "scale" : "2x"
     }
   ],
