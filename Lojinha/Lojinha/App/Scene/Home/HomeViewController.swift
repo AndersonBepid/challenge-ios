@@ -11,12 +11,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var bannerContainerView: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupStyle()
     }
     
     private func setupStyle() {
+        bannerContainerView.dropShadow()
         if let titleView = navigationController?.view, let navBar = navigationController?.navigationBar {
             let logoNavbarAsset = UIImage(named: UIImage.AssetName.logoNavbar.rawValue)
             let logoNavbarImageView = UIImageView(image: logoNavbarAsset)

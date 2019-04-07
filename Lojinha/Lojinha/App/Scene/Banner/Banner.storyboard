@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banner View Controller-->
+        <scene sceneID="Cex-0d-mUa">
+            <objects>
+                <viewController storyboardIdentifier="BannerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kIm-Er-p6b" customClass="BannerViewController" customModule="Lojinha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="wyk-j6-lIN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xGn-9l-haM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="FZ6-4K-N9O">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kIm-Er-p6b" id="oBL-U6-q06"/>
+                                    <outlet property="delegate" destination="kIm-Er-p6b" id="jxZ-k5-Wf0"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-qW-dE0">
+                                <rect key="frame" x="0.0" y="114" width="375" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="V9r-YR-A4o" firstAttribute="bottom" secondItem="5tD-qW-dE0" secondAttribute="bottom" id="TVS-Me-dA5"/>
+                            <constraint firstItem="xGn-9l-haM" firstAttribute="bottom" secondItem="V9r-YR-A4o" secondAttribute="bottom" id="a7Y-49-Evh"/>
+                            <constraint firstItem="5tD-qW-dE0" firstAttribute="leading" secondItem="V9r-YR-A4o" secondAttribute="leading" id="c3h-uY-fca"/>
+                            <constraint firstItem="xGn-9l-haM" firstAttribute="top" secondItem="V9r-YR-A4o" secondAttribute="top" id="o4o-ZK-ZM7"/>
+                            <constraint firstItem="xGn-9l-haM" firstAttribute="trailing" secondItem="V9r-YR-A4o" secondAttribute="trailing" id="oBN-aL-KpZ"/>
+                            <constraint firstItem="xGn-9l-haM" firstAttribute="leading" secondItem="V9r-YR-A4o" secondAttribute="leading" id="tIG-8q-lic"/>
+                            <constraint firstItem="V9r-YR-A4o" firstAttribute="trailing" secondItem="5tD-qW-dE0" secondAttribute="trailing" id="wIW-8b-yA1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="V9r-YR-A4o"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="151"/>
+                    <connections>
+                        <outlet property="collectionView" destination="xGn-9l-haM" id="zNY-Fh-u2m"/>
+                        <outlet property="pageControl" destination="5tD-qW-dE0" id="0MG-tf-fkR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="klp-JZ-STW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="72.413793103448285"/>
+        </scene>
+    </scenes>
+</document>

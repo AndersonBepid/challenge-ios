@@ -18,11 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4X9-Pe-k8K">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4X9-Pe-k8K">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-ng-8Fy">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                        <connections>
+                                            <segue destination="uiE-wp-QOT" kind="embed" id="oag-fm-B2C"/>
+                                        </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zch-WL-iXB">
                                         <rect key="frame" x="0.0" y="151" width="375" height="150.5"/>
@@ -47,10 +50,21 @@
                     <navigationItem key="navigationItem" id="DnL-P5-otn">
                         <nil key="title"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bannerContainerView" destination="r6a-ng-8Fy" id="T0c-t2-Isc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RA3-xl-KTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="-97.601199400299862"/>
+        </scene>
+        <!--BannerViewController-->
+        <scene sceneID="IGG-Rv-Pky">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Banner" referencedIdentifier="BannerViewController" id="uiE-wp-QOT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7kV-dC-vdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="-276"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ytx-Sw-Wpw">
