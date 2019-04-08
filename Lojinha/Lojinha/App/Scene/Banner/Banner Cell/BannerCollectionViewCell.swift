@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class BannerCollectionViewCell: UICollectionViewCell {
 
@@ -21,14 +22,20 @@ class BannerCollectionViewCell: UICollectionViewCell {
     }
 
     private func fill() {
-        guard let viewModel = viewModel else { return }
-        imageView.image = viewModel.image
+        guard let viewModel = viewModel, let urlString = viewModel.urlImage, let url = URL(string: urlString) else { return }
+        imageView.kf.setImage(
+            with: url,
+            placeholder: UIImage(named: "placeholderImage"),
+            options: [
+            .cacheOriginalImage
+            ]
+        )
     }
 }
 
 extension BannerCollectionViewCell {
 
     struct ViewModel {
-        let image: UIImage?
+        let urlImage: String?
     }
 }

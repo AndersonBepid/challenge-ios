@@ -11,7 +11,7 @@ import UIKit
 extension BannerViewController: UICollectionViewDataSource {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return banners.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -19,8 +19,10 @@ extension BannerViewController: UICollectionViewDataSource {
         guard let bannerCell = cell as? BannerCollectionViewCell else {
             return BannerCollectionViewCell()
         }
-        let viewModel = BannerCollectionViewCell.ViewModel(image: #imageLiteral(resourceName: "testeBanner"))
-        bannerCell.viewModel = viewModel
+        
+        let banner = banners[indexPath.item]
+        bannerCell.viewModel = banner
+        bannerCell.imageView.contentMode = .scaleAspectFill
         
         return bannerCell
     }

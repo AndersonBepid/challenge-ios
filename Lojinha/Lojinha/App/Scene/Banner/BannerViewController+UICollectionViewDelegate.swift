@@ -17,8 +17,11 @@ extension BannerViewController: UICollectionViewDelegate {
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         guard let layout = collectionView.collectionViewLayout as? SnapPagingLayout else { return }
-        print(targetContentOffset)
         layout.willEndDragging(withVelocity: velocity, targetContentOffset: targetContentOffset)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        presenter.openUrl(by: indexPath.item)
     }
 }
 

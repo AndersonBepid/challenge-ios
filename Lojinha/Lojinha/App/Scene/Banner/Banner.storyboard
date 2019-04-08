@@ -32,8 +32,8 @@
                                     <outlet property="delegate" destination="kIm-Er-p6b" id="jxZ-k5-Wf0"/>
                                 </connections>
                             </collectionView>
-                            <pageControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-qW-dE0">
-                                <rect key="frame" x="0.0" y="114" width="375" height="37"/>
+                            <pageControl opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5tD-qW-dE0">
+                                <rect key="frame" x="0.0" y="151" width="375" height="0.0"/>
                             </pageControl>
                         </subviews>
                         <constraints>
