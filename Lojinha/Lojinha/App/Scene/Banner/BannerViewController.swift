@@ -49,4 +49,11 @@ extension BannerViewController: BannerPresenterDelegate {
         pageControl.numberOfPages = banners.count
         collectionView.reloadData()
     }
+
+    func bannerPresenter(didReceiveError errorMessege: String) {
+        let alertController = UIAlertController(title: "Houston, i have a problem...", message: errorMessege, preferredStyle: .actionSheet)
+        let okAction = UIAlertAction(title: "Ok, entendi", style: .cancel, handler: nil)
+        alertController.addAction(okAction)
+        present(alertController, animated: true, completion: nil)
+    }
 }

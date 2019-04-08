@@ -11,7 +11,7 @@ import UIKit
 extension BestSellersViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return bestSellers.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -19,6 +19,9 @@ extension BestSellersViewController: UITableViewDataSource {
         guard let bestSellersCell = cell as? BestSellersTableViewCell else {
             return BestSellersTableViewCell()
         }
+        
+        let bestSell = bestSellers[indexPath.row]
+        bestSellersCell.viewModel = bestSell
         
         return bestSellersCell
     }

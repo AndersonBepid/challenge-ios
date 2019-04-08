@@ -23,6 +23,11 @@ class BestSellersTableViewCell: UITableViewCell {
     @IBOutlet weak var oldPriceLabel: UILabel!
     @IBOutlet weak var currentPriceLabel: UILabel!
 
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        oldPriceLabel.lineThrough()
+    }
+
     func fill() {
         guard let viewModel = viewModel, let urlString = viewModel.urlImage, let url = URL(string: urlString) else { return }
         productImageView.kf.setImage(
@@ -33,8 +38,8 @@ class BestSellersTableViewCell: UITableViewCell {
             ]
         )
         titleLabel.text = viewModel.title
-        oldPriceLabel.text = viewModel.oldPrice
-        currentPriceLabel.text = viewModel.currentPrice
+        oldPriceLabel.text = "De: \(viewModel.oldPrice ?? "")"
+        currentPriceLabel.text = "Por: \(viewModel.currentPrice ?? "")"
     }
 }
 

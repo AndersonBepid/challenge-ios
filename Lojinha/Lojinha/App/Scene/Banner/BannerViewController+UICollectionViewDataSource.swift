@@ -22,7 +22,6 @@ extension BannerViewController: UICollectionViewDataSource {
         
         let banner = banners[indexPath.item]
         bannerCell.viewModel = banner
-        bannerCell.imageView.contentMode = .scaleAspectFill
         
         return bannerCell
     }

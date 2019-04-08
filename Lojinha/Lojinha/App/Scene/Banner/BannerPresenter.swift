@@ -11,6 +11,7 @@ import Foundation
 
 protocol BannerPresenterDelegate: class {
     func bannerPresenter(didLoadViewModel viewModel: BannerPresenter.ViewModel)
+    func bannerPresenter(didReceiveError errorMessege: String)
 }
 
 class BannerPresenter {
@@ -32,7 +33,7 @@ class BannerPresenter {
                 self.viewModel.cellViewModels = self.cellViewModels(by: banners)
                 self.delegate?.bannerPresenter(didLoadViewModel: self.viewModel)
             case .failure(let error):
-                print(error.localizedDescription)
+                self.delegate?.bannerPresenter(didReceiveError: error.localizedDescription)
             }
         }
     }

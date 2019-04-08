@@ -9,18 +9,6 @@
 import Moya
 import Result
 
-public struct BusinessError: Codable, Error {
-    var statusCode: Int?
-    var code: String?
-    var text: String?
-    var title: String?
-}
-
-public enum ServiceError: Swift.Error {
-    case businessError(BusinessError)
-    case moyaError(MoyaError)
-}
-
 protocol BannerServiceDelegate {
     func getBanner(_ completion: @escaping (Result<[Banner]?, ServiceError>) -> Void)
 }

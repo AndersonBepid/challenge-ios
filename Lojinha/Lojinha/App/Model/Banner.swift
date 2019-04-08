@@ -9,7 +9,7 @@
 import Foundation
 
 struct BannerResult: Codable {
-    var data: [Banner]
+    var data: [Banner]?
 }
 
 struct Banner: Codable {

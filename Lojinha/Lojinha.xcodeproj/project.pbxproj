@@ -35,6 +35,14 @@
 		A0EAAB9C225B03D100D0E821 /* BestSellersViewController+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAAB9B225B03D100D0E821 /* BestSellersViewController+UITableViewDelegate.swift */; };
 		A0EAAB9F225B05EC00D0E821 /* BestSellersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0EAAB9E225B05EC00D0E821 /* BestSellersTableViewCell.xib */; };
 		A0EAABA3225B0B4600D0E821 /* BestSellersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAABA2225B0B4600D0E821 /* BestSellersTableViewCell.swift */; };
+		A0F6E8F7225B12BF006B006E /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E8F6225B12BF006B006E /* Category.swift */; };
+		A0F6E8F9225B133E006B006E /* BestSellers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E8F8225B133E006B006E /* BestSellers.swift */; };
+		A0F6E8FB225B151E006B006E /* BestSellersTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E8FA225B151E006B006E /* BestSellersTargetType.swift */; };
+		A0F6E8FD225B15C0006B006E /* BestSellersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E8FC225B15C0006B006E /* BestSellersService.swift */; };
+		A0F6E8FF225B1682006B006E /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E8FE225B1682006B006E /* ServiceError.swift */; };
+		A0F6E901225B1C26006B006E /* BestSellersPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E900225B1C26006B006E /* BestSellersPresenter.swift */; };
+		A0F6E903225B24BF006B006E /* Float+currencyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E902225B24BF006B006E /* Float+currencyValue.swift */; };
+		A0F6E905225B293E006B006E /* UILabel+lineThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F6E904225B293E006B006E /* UILabel+lineThrough.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +102,14 @@
 		A0EAAB9B225B03D100D0E821 /* BestSellersViewController+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BestSellersViewController+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		A0EAAB9E225B05EC00D0E821 /* BestSellersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BestSellersTableViewCell.xib; sourceTree = "<group>"; };
 		A0EAABA2225B0B4600D0E821 /* BestSellersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersTableViewCell.swift; sourceTree = "<group>"; };
+		A0F6E8F6225B12BF006B006E /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A0F6E8F8225B133E006B006E /* BestSellers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellers.swift; sourceTree = "<group>"; };
+		A0F6E8FA225B151E006B006E /* BestSellersTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersTargetType.swift; sourceTree = "<group>"; };
+		A0F6E8FC225B15C0006B006E /* BestSellersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersService.swift; sourceTree = "<group>"; };
+		A0F6E8FE225B1682006B006E /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		A0F6E900225B1C26006B006E /* BestSellersPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersPresenter.swift; sourceTree = "<group>"; };
+		A0F6E902225B24BF006B006E /* Float+currencyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+currencyValue.swift"; sourceTree = "<group>"; };
+		A0F6E904225B293E006B006E /* UILabel+lineThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+lineThrough.swift"; sourceTree = "<group>"; };
 		BA89F92A879346A1F4737234 /* Pods-LojinhaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LojinhaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LojinhaUITests/Pods-LojinhaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -230,6 +246,8 @@
 			children = (
 				A0EAAB73225A761F00D0E821 /* UIImage+AssetName.swift */,
 				A0EAAB85225A8F0600D0E821 /* UIView+Shadow.swift */,
+				A0F6E902225B24BF006B006E /* Float+currencyValue.swift */,
+				A0F6E904225B293E006B006E /* UILabel+lineThrough.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +279,8 @@
 			children = (
 				A0EAAB8C225ABFFE00D0E821 /* Target Types */,
 				A0EAAB8A225ABFA200D0E821 /* BannerService.swift */,
+				A0F6E8FC225B15C0006B006E /* BestSellersService.swift */,
+				A0F6E8FE225B1682006B006E /* ServiceError.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -269,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				A0EAAB8D225AC02600D0E821 /* BannerTargetType.swift */,
+				A0F6E8FA225B151E006B006E /* BestSellersTargetType.swift */,
 			);
 			path = "Target Types";
 			sourceTree = "<group>";
@@ -277,6 +298,8 @@
 			isa = PBXGroup;
 			children = (
 				A0EAAB90225AC32C00D0E821 /* Banner.swift */,
+				A0F6E8F6225B12BF006B006E /* Category.swift */,
+				A0F6E8F8225B133E006B006E /* BestSellers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,6 +309,7 @@
 			children = (
 				A0EAAB9D225B05B700D0E821 /* Best Sellers Cell */,
 				A0EAAB95225B023300D0E821 /* BestSellers.storyboard */,
+				A0F6E900225B1C26006B006E /* BestSellersPresenter.swift */,
 				A0EAAB97225B034700D0E821 /* BestSellersViewController.swift */,
 				A0EAAB99225B03B300D0E821 /* BestSellersViewController+UITableViewDataSource.swift */,
 				A0EAAB9B225B03D100D0E821 /* BestSellersViewController+UITableViewDelegate.swift */,
@@ -551,20 +575,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F6E903225B24BF006B006E /* Float+currencyValue.swift in Sources */,
 				A0EAAB9A225B03B300D0E821 /* BestSellersViewController+UITableViewDataSource.swift in Sources */,
 				A0EAAB98225B034700D0E821 /* BestSellersViewController.swift in Sources */,
 				A0EAAB8B225ABFA200D0E821 /* BannerService.swift in Sources */,
+				A0F6E8FB225B151E006B006E /* BestSellersTargetType.swift in Sources */,
+				A0F6E8FD225B15C0006B006E /* BestSellersService.swift in Sources */,
+				A0F6E905225B293E006B006E /* UILabel+lineThrough.swift in Sources */,
 				A0EAAB86225A8F0600D0E821 /* UIView+Shadow.swift in Sources */,
 				A0EAABA3225B0B4600D0E821 /* BestSellersTableViewCell.swift in Sources */,
+				A0F6E8F7225B12BF006B006E /* Category.swift in Sources */,
 				A0EAAB82225A8BA500D0E821 /* BannerViewController+UICollectionViewDataSource.swift in Sources */,
 				A0EAAB3D225A69B800D0E821 /* AppDelegate.swift in Sources */,
 				A0EAAB91225AC32C00D0E821 /* Banner.swift in Sources */,
 				A0EAAB8E225AC02600D0E821 /* BannerTargetType.swift in Sources */,
+				A0F6E8FF225B1682006B006E /* ServiceError.swift in Sources */,
 				A0EAAB9C225B03D100D0E821 /* BestSellersViewController+UITableViewDelegate.swift in Sources */,
 				A0EAAB93225AE11900D0E821 /* BannerPresenter.swift in Sources */,
+				A0F6E8F9225B133E006B006E /* BestSellers.swift in Sources */,
 				A0EAAB74225A761F00D0E821 /* UIImage+AssetName.swift in Sources */,
 				A0EAAB7B225A879F00D0E821 /* BannerViewController.swift in Sources */,
 				A0EAAB80225A88CC00D0E821 /* BannerCollectionViewCell.swift in Sources */,
+				A0F6E901225B1C26006B006E /* BestSellersPresenter.swift in Sources */,
 				A0EAAB71225A6CB500D0E821 /* HomeViewController.swift in Sources */,
 				A0EAAB84225A8BC900D0E821 /* BannerViewController+UICollectionViewDelegate.swift in Sources */,
 			);
