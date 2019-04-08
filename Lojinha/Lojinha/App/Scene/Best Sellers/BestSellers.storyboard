@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Best Sellers View Controller-->
+        <scene sceneID="5Lf-Wg-4TI">
+            <objects>
+                <viewController storyboardIdentifier="BestSellersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ygq-jB-Hnu" customClass="BestSellersViewController" customModule="Lojinha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lF0-hQ-Z2W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="E3l-sh-gwy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ygq-jB-Hnu" id="jgi-qf-HLU"/>
+                                    <outlet property="delegate" destination="ygq-jB-Hnu" id="moW-Qx-fa7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K8x-ED-irr" firstAttribute="bottom" secondItem="E3l-sh-gwy" secondAttribute="bottom" id="Im4-tf-9rL"/>
+                            <constraint firstItem="K8x-ED-irr" firstAttribute="trailing" secondItem="E3l-sh-gwy" secondAttribute="trailing" id="L9i-jv-rw1"/>
+                            <constraint firstItem="E3l-sh-gwy" firstAttribute="top" secondItem="lF0-hQ-Z2W" secondAttribute="top" id="N34-Hm-dr7"/>
+                            <constraint firstItem="E3l-sh-gwy" firstAttribute="leading" secondItem="K8x-ED-irr" secondAttribute="leading" id="xBj-2r-vvd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K8x-ED-irr"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="tableView" destination="E3l-sh-gwy" id="9at-PN-iOx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cv-zp-Lei" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="126"/>
+        </scene>
+    </scenes>
+</document>

@@ -32,6 +32,9 @@
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41A-Jt-bnu">
                                         <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
+                                        <connections>
+                                            <segue destination="aMh-TY-ziE" kind="embed" id="aNL-nT-Tzp"/>
+                                        </connections>
                                     </containerView>
                                 </subviews>
                             </stackView>
@@ -65,6 +68,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kV-dC-vdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1694" y="-276"/>
+        </scene>
+        <!--BestSellersViewController-->
+        <scene sceneID="ulG-eI-WeL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BestSellers" referencedIdentifier="BestSellersViewController" id="aMh-TY-ziE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sXO-Gw-Roa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="67"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ytx-Sw-Wpw">
