@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories View Controller-->
+        <scene sceneID="BbV-nY-8uq">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8fj-Gv-RCY" customClass="CategoriesViewController" customModule="Lojinha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" id="6BY-ko-V2g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ued-Dm-cP1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="151"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jdL-qc-415">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="8fj-Gv-RCY" id="gYh-fv-SsG"/>
+                                    <outlet property="delegate" destination="8fj-Gv-RCY" id="sGZ-DX-LhU"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ued-Dm-cP1" firstAttribute="bottom" secondItem="Mrq-YC-VD6" secondAttribute="bottom" id="3C9-fM-v0S"/>
+                            <constraint firstItem="ued-Dm-cP1" firstAttribute="top" secondItem="Mrq-YC-VD6" secondAttribute="top" id="LEg-po-Bag"/>
+                            <constraint firstItem="ued-Dm-cP1" firstAttribute="leading" secondItem="Mrq-YC-VD6" secondAttribute="leading" id="bji-BO-bcy"/>
+                            <constraint firstItem="ued-Dm-cP1" firstAttribute="trailing" secondItem="Mrq-YC-VD6" secondAttribute="trailing" id="xOq-SU-25a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mrq-YC-VD6"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="151"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ued-Dm-cP1" id="JY2-A6-C7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r2M-QX-GUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>

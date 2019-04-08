@@ -29,6 +29,9 @@
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zch-WL-iXB">
                                         <rect key="frame" x="0.0" y="151" width="375" height="150.5"/>
+                                        <connections>
+                                            <segue destination="7vV-pR-axd" kind="embed" id="I7i-gn-dR6"/>
+                                        </connections>
                                     </containerView>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="41A-Jt-bnu">
                                         <rect key="frame" x="0.0" y="301.5" width="375" height="301.5"/>
@@ -68,6 +71,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kV-dC-vdJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1694" y="-276"/>
+        </scene>
+        <!--CategoriesViewController-->
+        <scene sceneID="MWw-HR-j5d">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Categories" referencedIdentifier="CategoriesViewController" id="7vV-pR-axd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C1V-E5-Abq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="-98"/>
         </scene>
         <!--BestSellersViewController-->
         <scene sceneID="ulG-eI-WeL">

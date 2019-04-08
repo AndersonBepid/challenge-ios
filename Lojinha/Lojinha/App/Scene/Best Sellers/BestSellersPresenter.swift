@@ -38,7 +38,7 @@ class BestSellersPresenter {
         }
     }
     
-    private func cellViewModels(by bestSellers: [BestSellers]?) -> [BestSellersTableViewCell.ViewModel]? {
+    private func cellViewModels(by bestSellers: [Product]?) -> [BestSellersTableViewCell.ViewModel]? {
         guard let bestSellers = bestSellers else { return nil }
         return bestSellers.map {
             BestSellersTableViewCell.ViewModel(urlImage: $0.urlImagem, title: $0.name, oldPrice: "\($0.oldPrice?.currencyValue ?? "")", currentPrice: "\($0.currentPrice?.currencyValue ?? "")")

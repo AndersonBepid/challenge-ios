@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct BestSellersResult: Codable {
-    var data: [BestSellers]?
+struct ProductResult: Codable {
+    var data: [Product]?
 }
 
-struct BestSellers: Codable {
+struct Product: Codable {
     var id: Int
     var categoria: Category?
     var descricao: String?

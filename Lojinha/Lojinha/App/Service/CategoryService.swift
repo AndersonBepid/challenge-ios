@@ -1,5 +1,5 @@
 //
-//  BestSellersService.swift
+//  CategoryService.swift
 //  Lojinha
 //
 //  Created by Anderson Oliveira on 08/04/19.
@@ -9,26 +9,26 @@
 import Moya
 import Result
 
-protocol BestSellersServiceDelegate {
-    func getBestSellers(_ completion: @escaping (Result<[Product]?, ServiceError>) -> Void)
+protocol CategoryServiceDelegate {
+    func getCategory(_ completion: @escaping (Result<[Category]?, ServiceError>) -> Void)
 }
 
-class BestSellersService: BestSellersServiceDelegate {
+class CategoryService: CategoryServiceDelegate {
     
-    static let shared = BestSellersService()
-    let provider = MoyaProvider<BestSellersTargetType>()
-    var bestSellers: [Product]?
+    static let shared = CategoryService()
+    let provider = MoyaProvider<CategoryTargetType>()
+    var categories: [Category]?
     
-    func getBestSellers(_ completion: @escaping (Result<[Product]?, ServiceError>) -> Void) {
-        provider.request(.getBestSellers()) { (result) in
+    func getCategory(_ completion: @escaping (Result<[Category]?, ServiceError>) -> Void) {
+        provider.request(.getCategory()) { (result) in
             switch result {
             case .success(let moyaResponse):
                 switch moyaResponse.statusCode {
                 case 200..<300:
                     do {
-                        let bestSellersResult = try JSONDecoder().decode(ProductResult.self, from: moyaResponse.data)
-                        self.bestSellers = bestSellersResult.data
-                        completion(.success(bestSellersResult.data))
+                        let categoryResult = try JSONDecoder().decode(CategoryResult.self, from: moyaResponse.data)
+                        self.categories = categoryResult.data
+                        completion(.success(categoryResult.data))
                     } catch {
                         completion(.failure(ServiceError.moyaError(MoyaError.jsonMapping(moyaResponse))))
                     }

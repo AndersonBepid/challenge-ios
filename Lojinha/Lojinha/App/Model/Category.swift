@@ -8,6 +8,10 @@
 
 import Foundation
 
+struct CategoryResult: Codable {
+    var data: [Category]?
+}
+
 struct Category: Codable {
     var id: Int
     var descricao: String?
